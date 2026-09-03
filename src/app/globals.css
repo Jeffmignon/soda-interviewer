@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+:root {
+  --paper: #f3eee4;
+  --paper-deep: #e7dfd2;
+  --ink: #1a1714;
+  --ink-soft: #5c5348;
+  --rule: #d4c8b8;
+  --terracotta: #9e3d2f;
+  --terracotta-deep: #7c2e24;
+  --sage: #355c45;
+  --gold: #b0893c;
+  --white: #fbf8f2;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-rule: var(--rule);
+  --color-terracotta: var(--terracotta);
+  --color-sage: var(--sage);
+  --color-gold: var(--gold);
+  --font-serif: var(--font-newsreader);
+  --font-sans: var(--font-figtree);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-newsreader), ui-serif, Georgia, serif;
+}
+
+.font-mono {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+}
+
+::selection {
+  background: #ead7c2;
+}
+
+textarea,
+input,
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.rule {
+  height: 1px;
+  background: var(--rule);
+}

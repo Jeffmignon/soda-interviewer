@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: soda
+      POSTGRES_PASSWORD: soda
+      POSTGRES_DB: soda
+    ports:
+      - "5432:5432"
+    volumes:
+      - soda_pg:/var/lib/postgresql/data
+
+volumes:
+  soda_pg:
